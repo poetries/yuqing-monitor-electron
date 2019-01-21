@@ -7,8 +7,23 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'landing-page',
-      component: require('@/components/LandingPage').default
+      name: 'home',
+      component: require('@/components/Home').default
+    },
+    {
+      path: '/report',
+      name: 'report',
+      component: require('@/components/Report').default
+    },
+    {
+      path: '/keyword',
+      name: 'keyword',
+      component: require('@/components/KeyWord').default
+    },
+    {
+      path: '/alarm',
+      name: 'alarm',
+      component: require('@/components/Alarm').default
     },
     {
       path: '*',
