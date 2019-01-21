@@ -81,4 +81,21 @@
     overflow-x: hidden;
     padding: 10px;
   }
+  .content {
+    width: 100%;
+  }
+  //全局表格
+
+.electron-table{
+  border-collapse: collapse;     //给表格设置合并边框模型
+  width: 100%;
+}
+.electron-table tr td,.electron-table tr th{
+  height: 30px;
+  line-height: 30px;
+  border:1px solid #eee;
+  text-align: center;
+  font-size: 14px;
+  padding:5px;
+}
 </style>

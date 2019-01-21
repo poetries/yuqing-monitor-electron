@@ -107,7 +107,6 @@
     padding: 10px;
     margin-bottom: 10px;
     overflow: hidden;
-
  }
  .page{
    text-align: center;

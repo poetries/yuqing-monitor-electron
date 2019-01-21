@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <div id="home"  class="content">
     <highcharts :options="areaOptions"></highcharts>
   </div>
 </template>
