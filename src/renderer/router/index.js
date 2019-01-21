@@ -16,6 +16,16 @@ export default new Router({
       component: require('@/components/Report').default
     },
     {
+      path: '/negativereport',
+      name: 'negativereport',
+      component: require('@/components/NegativeReport').default
+    },
+    {
+      path: '/positivereport',
+      name: 'positivereport',
+      component: require('@/components/PositiveReport').default
+    },
+    {
       path: '/keyword',
       name: 'keyword',
       component: require('@/components/KeyWord').default

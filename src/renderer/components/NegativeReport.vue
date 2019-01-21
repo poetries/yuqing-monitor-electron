@@ -93,9 +93,13 @@
     export default {
       name: 'report',
       data(){
+
           return{
+
               page:1,
+
               start_time:'',
+
               end_time:'',
               list:[],
               total:100,
@@ -104,7 +108,9 @@
       },
       filters:{
           formTime(value){
+
                   let date = new Date(value*1000);     //13位的时间戳
+
                   let y = date.getFullYear();
                   let MM = date.getMonth() + 1;
                   MM = MM < 10 ? ('0' + MM) : MM;
@@ -118,15 +124,19 @@
                   s = s < 10 ? ('0' + s) : s;
                   return y + '-' + MM + '-' + d + ' ' + h + ':' + m + ':' + s;
 
+
           }
 
       },
       methods: {
         pageChange (e) {
           console.log(e);
+
           this.page=e;
           this.currentPage=e;
           this.getReportData();
+
+
 
         },
         searchData(){
@@ -150,6 +160,11 @@
              this.currentPage=1;
             this.getReportData();
 
+
+
+
+
+
         },
         getReportData(){
 
@@ -164,9 +179,12 @@
 
               //格式化日期
               var s_date=new Date(this.start_time);
-              var e_date=new Date(this.end_time);           
-              var start_time=this.start_time?s_date.getTime()/1000:"";
+              var e_date=new Date(this.end_time);
+           
+              var start_time=this.start_time?s_date.getTime()/1000:"";             
+             
               var end_time=this.end_time?e_date.getTime()/1000:"";
+
 
            
               this.$http.get(api,{
@@ -175,7 +193,8 @@
                     sign:sign,
                     p:this.page,
                     start_time:start_time,
-                    end_time:end_time
+                    end_time:end_time,
+                    type:-1
                 }
               })
                 .then( (response)=> {
@@ -198,8 +217,12 @@
        
       },
       mounted() {
+
+
         //获取get传值
+
         console.log(this.$route.query);
+
         this.getReportData();
            
       }
