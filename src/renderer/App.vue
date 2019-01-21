@@ -32,7 +32,7 @@
               </el-submenu>
             </el-menu>
           </el-aside>
-        <el-container :style="{'height':winHeight+'px'}">
+        <el-container :style="{'height':winHeight+'px'}" class="right-content">
           <router-view></router-view>
         </el-container>
       </el-container>
@@ -54,3 +54,29 @@
     },
   }
 </script>
+
+<style lang="scss">
+*{
+  margin:0px;
+  padding:0px;
+}
+.el-aside {
+    width: 200px!important;
+    background: #eee;
+    a{
+     color: #333; 
+     display: block;
+     text-decoration: none;     
+    }
+    .el-menu{
+      background: #eee;
+    }
+  }
+  .el-container{
+    // padding:10px;
+    width: 100%;
+  }
+  .right-content {
+    padding-left: 10px
+  }
+</style>
