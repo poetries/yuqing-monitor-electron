@@ -1,31 +1,19 @@
 <template>
   <div id="report" class="content">
-
-
         <div class="main_top">
-
-
              <el-date-picker
               v-model="start_time"
               type="date"
               placeholder="选择日期">
             </el-date-picker>
-
             -
-
               <el-date-picker
               v-model="end_time"
               type="date"
               placeholder="选择日期">
             </el-date-picker>
-
             <el-button type="primary" @click="searchData()">搜索</el-button>
-
         </div>
-
-
-
-
         <!-- 内容区域 -->
 
         <table class="electron-table">
@@ -36,8 +24,7 @@
                 <th width="200">发现时间</th>		
                 <th width="200">帖子时间</th>	
             </tr>
-              <tr v-for="(item,key) in list" :key="key">
-                                        
+              <tr v-for="(item,key) in list" :key="key">            
                   <td align="left" >
                     <a :href="item.url">{{item.title}}</a>
                   </td>
@@ -67,11 +54,9 @@
                   <td align="center">{{item.add_time | formTime}}</td>
                   <td align="center">{{item.update_time | formTime}}</td>  
            </tr> 
-
    </table>
 
     <div class="page">
-      
       <el-pagination
         background
         layout="prev, pager, next"

@@ -115,4 +115,7 @@
  .v-modal{
   opacity: 0.8!important;
 }
+.router-link-active {
+  color: rgba(255, 0, 0, 0.986) !important;
+}
 </style>
