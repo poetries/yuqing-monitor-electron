@@ -54,6 +54,7 @@
     "axios": "^0.18.0",
     "element-ui": "^2.4.11",
     "highcharts": "^7.0.2",
+    "js-md5": "^0.7.3",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "vue": "^2.5.16",

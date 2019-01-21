@@ -14,12 +14,6 @@
                 <el-menu-item index="2-4-1">
                   <router-link to='report'>全部舆情</router-link>
                 </el-menu-item>
-                <el-menu-item index="2-4-1">
-                  <router-link to='report?id=1'>正面舆情</router-link>
-                </el-menu-item>
-                <el-menu-item index="2-4-1">
-                  <router-link to='report?id=2'>负面舆情</router-link>
-                </el-menu-item>
               </el-submenu>
               <el-submenu index="3">
                 <template slot="title"><i class="el-icon-setting"></i>舆情设置</template>            
