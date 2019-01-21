@@ -1,6 +1,6 @@
 # yuqing-monitor-electron
 
-> 一个使用electron开发的舆情监控客户端
+> 一个使用electron开发的舆情监控客户端练手项目
 
 #### Build Setup
 

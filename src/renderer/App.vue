@@ -32,7 +32,7 @@
               </el-submenu>
             </el-menu>
           </el-aside>
-        <el-container :style="{'height':winHeight+'px'}" class="right-content">
+        <el-container :style="{'height':winHeight+'px'}" class="main-content">
           <router-view></router-view>
         </el-container>
       </el-container>
@@ -76,7 +76,9 @@
     // padding:10px;
     width: 100%;
   }
-  .right-content {
-    padding-left: 10px
+  .main-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
   }
 </style>
