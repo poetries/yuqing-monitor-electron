@@ -112,4 +112,7 @@
    text-align: center;
    margin-top:20px;
  }
+ .v-modal{
+  opacity: 0.8!important;
+}
 </style>
