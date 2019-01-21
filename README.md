@@ -1,7 +1,7 @@
 # yuqing-monitor-electron
 
-> 一个使用electron开发的舆情监控客户端练手项目
-> 文章总结 http://blog.poetries.top/2019/01/06/electron-summary
+> - 一个使用`Electron+Node+Vue+ElementUI+Highcharts`开发的舆情监控客户端，支持`windows`、`mac`多平台
+> - 文章总结 http://blog.poetries.top/2019/01/06/electron-summary
 
 ## Build Setup
 
