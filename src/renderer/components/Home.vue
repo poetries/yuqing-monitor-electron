@@ -7,10 +7,10 @@
 	<el-dialog title="登录" :close-on-click-modal="false" :close-on-press-escape="false" :show-close="false" :center="true" :visible.sync="dialogFormVisible">
 		<el-form>
 			<el-form-item>
-				<el-input v-model="userinfo.username" placeholder="用户名"></el-input>
+				<el-input v-model="userinfo.username" placeholder="用户名：admin"></el-input>
 			</el-form-item>
 			<el-form-item>
-				<el-input v-model="userinfo.password" placeholder="密码"></el-input>
+				<el-input v-model="userinfo.password" placeholder="密码：123456"></el-input>
 			</el-form-item>	
 		</el-form>
 		<div slot="footer" class="dialog-footer">			
