@@ -124,7 +124,6 @@ var columnOption={
 			}
 	  },
 	  mounted() {
-
 		  this.getAreaSeries();
 		  this.getColumnSeries();
 	  },
@@ -229,7 +228,8 @@ var columnOption={
 							tools.storage.set('userinfo',response.result);
 
 							this.dialogFormVisible=false;
-
+							this.getAreaSeries();
+		  					this.getColumnSeries();
 					}else{
 
 						this.$message({

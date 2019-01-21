@@ -2,7 +2,7 @@
 
 > 一个使用electron开发的舆情监控客户端练手项目
 
-#### Build Setup
+## Build Setup
 
 ``` bash
 # install dependencies
@@ -13,9 +13,31 @@ npm run dev
 
 # build electron application for production
 npm run build
-
-
 ```
+
+
+## screenShot
+
+> 舆情监控系统页面
+
+![登录页](https://upload-images.jianshu.io/upload_images/1480597-c596db05f2a2eb91.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![首页](https://upload-images.jianshu.io/upload_images/1480597-f1c5b093710846e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![全部舆情](https://upload-images.jianshu.io/upload_images/1480597-935c08dbd2b1f7cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![舆情关键词](https://upload-images.jianshu.io/upload_images/1480597-b5879fb1d2210b04.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![增加关键词](https://upload-images.jianshu.io/upload_images/1480597-6a1baa70cfadb1b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![舆情报警设置](https://upload-images.jianshu.io/upload_images/1480597-376b9f4cc912bc25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+> 系统系统托盘/electron 消息通知 （类似腾讯新闻）
+
+
+
+
+
 
 ---
 
