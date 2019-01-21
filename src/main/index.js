@@ -30,6 +30,7 @@ function createWindow () {
   })
   // 去掉顶部菜单
   mainWindow.setMenu(null)
+  
   require('./model/menu.js');
   require('./model/tray.js');
 }

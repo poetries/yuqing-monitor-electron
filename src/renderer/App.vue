@@ -28,6 +28,9 @@
                   </el-menu-item>
                   <el-menu-item index="3-2">
                       <router-link to='alarm'>舆情报警设置</router-link>   
+                  </el-menu-item>         
+                  <el-menu-item index="3-2">
+                      <router-link to='msg'>socket发送消息</router-link>   
                   </el-menu-item>          
               </el-submenu>
             </el-menu>
@@ -46,6 +49,25 @@
         return{
           winHeight:document.documentElement.clientHeight
         }
+    },
+     sockets:{
+      connect: function(){  //vue客户端和socket.io服务器端建立连接以后触发的方法
+        console.log('socket connected')
+      },
+      serverEmit: function(val){  //接收服务器广播的数据
+          console.log(val);
+          const option = {
+            title: '腾讯新闻',
+            body: val.title,
+            icon: require('path').join(__dirname,'assets/favicon2.ico')
+          }
+          const myNotification = new window.Notification(option.title,option);
+
+          myNotification.onclick = () =>{
+            // console.log('点击了');
+            this.$electron.shell.openExternal(val.url);
+          }
+      }
     },
     mounted() {
       //监听网络变化

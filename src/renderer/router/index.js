@@ -36,6 +36,11 @@ export default new Router({
       component: require('@/components/Alarm').default
     },
     {
+      path: '/msg',
+      name: 'msg',
+      component: require('@/components/Msg').default
+    },
+    {
       path: '*',
       redirect: '/home'
     }
