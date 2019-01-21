@@ -98,4 +98,18 @@
   font-size: 14px;
   padding:5px;
 }
+
+/*全局布局*/
+ .main_top{
+    background: none repeat scroll 0 0 #FFFCED;
+    border: 1px solid #FFFCED;
+    line-height: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+ }
+ .page{
+   text-align: center;
+   margin-top:20px;
+ }
 </style>

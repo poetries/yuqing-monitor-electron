@@ -77,8 +77,8 @@
         }
       },
       methods: {
-        open (link) {
-          // this.$electron.shell.openExternal(link)
+         pageChange (e) {
+          console.log(e);
         }
       }
     }
