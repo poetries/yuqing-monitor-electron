@@ -1,6 +1,7 @@
 # yuqing-monitor-electron
 
 > 一个使用electron开发的舆情监控客户端练手项目
+> 文章总结 http://blog.poetries.top/2019/01/06/electron-summary
 
 ## Build Setup
 
@@ -32,7 +33,7 @@ npm run build
 
 ![舆情报警设置](https://upload-images.jianshu.io/upload_images/1480597-376b9f4cc912bc25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-> 系统系统托盘/electron 消息通知 （类似腾讯新闻）
+> 系统系统托盘、`electron` 消息通知 （类似腾讯新闻）
 
 
 

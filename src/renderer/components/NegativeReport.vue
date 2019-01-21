@@ -22,10 +22,6 @@
             <el-button type="primary" @click="searchData()">搜索</el-button>
 
         </div>
-
-
-
-
         <!-- 内容区域 -->
 
         <table class="electron-table">
@@ -39,7 +35,7 @@
               <tr v-for="(item,key) in list" :key="key">
                                         
                   <td align="left" >
-                    <a :href="item.url">{{item.title}}</a>
+                    <a :href="item.url"  @click="openUrl($event, item.url)">{{item.title}}</a>
                   </td>
                   <td align="center">
 
@@ -129,15 +125,16 @@
 
       },
       methods: {
+        openUrl(e, url) {
+            e.preventDefault()
+            this.$electron.shell.openExternal(url)
+        },
         pageChange (e) {
           console.log(e);
 
           this.page=e;
           this.currentPage=e;
           this.getReportData();
-
-
-
         },
         searchData(){
              this.page=1;

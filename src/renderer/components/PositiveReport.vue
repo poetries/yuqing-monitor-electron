@@ -39,7 +39,7 @@
               <tr v-for="(item,key) in list" :key="key">
                                         
                   <td align="left" >
-                    <a :href="item.url">{{item.title}}</a>
+                    <a :href="item.url"  @click="openUrl($event, item.url)">{{item.title}}</a>
                   </td>
                   <td align="center">
 
@@ -95,11 +95,8 @@
       data(){
 
           return{
-
               page:1,
-
               start_time:'',
-
               end_time:'',
               list:[],
               total:100,
@@ -129,15 +126,16 @@
 
       },
       methods: {
+        openUrl(e, url) {
+            e.preventDefault()
+            this.$electron.shell.openExternal(url)
+        },
         pageChange (e) {
           console.log(e);
 
           this.page=e;
           this.currentPage=e;
           this.getReportData();
-
-
-
         },
         searchData(){
              this.page=1;
@@ -159,12 +157,6 @@
 
              this.currentPage=1;
             this.getReportData();
-
-
-
-
-
-
         },
         getReportData(){
 
@@ -217,8 +209,6 @@
        
       },
       mounted() {
-
-
         //获取get传值
 
         console.log(this.$route.query);

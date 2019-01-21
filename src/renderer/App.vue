@@ -48,10 +48,35 @@
         }
     },
     mounted() {
+      //监听网络变化
+      window.addEventListener('online', function(){
+        console.log('有网络了')
+      });
+      window.addEventListener('offline', function(){
+        const option = {
+           title: '提示!',
+           body: '网络已经断开，请检查您的网络设置!',
+          //  icon: path.join('main-process/favicon2.ico')
+         }
+          const myNotification = new window.Notification(option.title,option);
+          myNotification.onclick = () =>{
+            console.log('点击了');
+          }
+        
+      });
+
+    //监听右键菜单
+
+    window.addEventListener('contextmenu',(e)=>{
+      e.preventDefault();
+      //给主进程广播事件   注意this指向
+      this.$electron.ipcRenderer.send('contextmenu');
+    })
+
       window.onresize=()=>{
         this.winHeight=document.documentElement.clientHeight;
       }
-    },
+    }
   }
 </script>
 
