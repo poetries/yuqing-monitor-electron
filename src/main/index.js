@@ -28,6 +28,8 @@ function createWindow () {
   mainWindow.on('closed', () => {
     mainWindow = null
   })
+  // 去掉顶部菜单
+  mainWindow.setMenu(null)
 }
 
 app.on('ready', createWindow)
