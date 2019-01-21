@@ -6,10 +6,10 @@
 			<el-dialog title="登录" :close-on-click-modal="false" :close-on-press-escape="false" :show-close="false" :center="true" :visible.sync="dialogFormVisible">
 				<el-form>
 					<el-form-item>
-						<el-input v-model="userinfo.username" placeholder="用户名"></el-input>
+						<el-input v-model="userinfo.username" placeholder="用户名:admin"></el-input>
 					</el-form-item>
 					<el-form-item>
-						<el-input v-model="userinfo.password" placeholder="密码"></el-input>
+						<el-input v-model="userinfo.password" placeholder="密码:123456"></el-input>
 					</el-form-item>
 				</el-form>
 				<div slot="footer" class="dialog-footer">			
@@ -82,8 +82,11 @@ var columnOption={
 	        text: '舆情数量统计'
 	    },
 	    subtitle: {
-	        text: '数据来源: itying.com'
-	    },
+	        text: '数据来源: blog.poetries.top'
+			},
+			credits:{
+			     enabled: false // 禁用版权信息
+			},
 	    xAxis: {
 	        categories: [
 	            '一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'
@@ -159,6 +162,11 @@ var columnOption={
 					// console.log(response);
 					response=response.data;
 					if(response.success){
+							this.$message({
+							message: response.message,
+							type: 'success'
+						});
+
 							//保存用户信息					
 							tools.storage.set('userinfo',response.result);
 							this.dialogFormVisible=false;
