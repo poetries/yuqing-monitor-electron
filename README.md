@@ -16,6 +16,8 @@ yarn install
 yarn run dev
 
 # build electron application for production
+# 在mac下执行，则构建mac的应用
+# 在windows执行，构建window安装包
 yarn run build
 ```
 
@@ -41,6 +43,7 @@ yarn run build
 ![系统托盘](https://upload-images.jianshu.io/upload_images/1480597-613843a578b77482.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
+![消息通知](https://upload-images.jianshu.io/upload_images/1480597-2c832074bd7b7f92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
