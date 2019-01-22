@@ -4,6 +4,8 @@
 > - 文章总结 http://blog.poetries.top/2019/01/06/electron-summary
 > - `Electron-vue`文档 https://simulatedgreg.gitbooks.io/electron-vue/content/cn
 
+> 最新版本 https://github.com/poetries/yuqing-monitor-electron/releases/tag/v0.0.1
+
 ## Build Setup
 
 ``` bash
