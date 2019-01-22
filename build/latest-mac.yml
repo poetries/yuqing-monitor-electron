@@ -1,0 +1,12 @@
+version: 0.0.1
+files:
+  - url: yuqing-monitor-0.0.1-mac.zip
+    sha512: NO3B9IshY0H8mAlZy8BiIzZz3ZqXpAx89l5L2KpMlWjBn/np4e18EcASEZCEfJBvVZyqINJ8zuOZ4A15YkikhQ==
+    size: 58231962
+    blockMapSize: 60726
+  - url: yuqing-monitor-0.0.1.dmg
+    sha512: MVazvtckEYEZA/56q8ojMhY9rnhSEujB4Z9IIvPgwytMTJO1Q+kLvncqTc3ngNAtoK7tuUuxwYcYbm5hjoszHw==
+    size: 60245974
+path: yuqing-monitor-0.0.1-mac.zip
+sha512: NO3B9IshY0H8mAlZy8BiIzZz3ZqXpAx89l5L2KpMlWjBn/np4e18EcASEZCEfJBvVZyqINJ8zuOZ4A15YkikhQ==
+releaseDate: '2019-01-22T02:07:38.131Z'
