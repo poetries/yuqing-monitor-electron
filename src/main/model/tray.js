@@ -3,8 +3,7 @@
     const {app,Menu,BrowserWindow,Tray, shell} = require('electron');
 
     //创建系统托盘
-
-    const tray = new Tray(path.resolve(__dirname, '../../renderer/assets/lover.png'))
+    const tray = new Tray(path.resolve(__static, 'favicon.png'))
 
     //给托盘增加右键菜单
     const template= [

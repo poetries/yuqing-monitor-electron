@@ -2,18 +2,19 @@
 
 > - 一个使用`Electron+Node+Vue+ElementUI+Highcharts`开发的舆情监控客户端，支持`windows`、`mac`多平台
 > - 文章总结 http://blog.poetries.top/2019/01/06/electron-summary
+> - `Electron-vue`文档 https://simulatedgreg.gitbooks.io/electron-vue/content/cn
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-npm install
+yarn install
 
 # serve with hot reload at localhost:9080
-npm run dev
+yarn run dev
 
 # build electron application for production
-npm run build
+yarn run build
 ```
 
 

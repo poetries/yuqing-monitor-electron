@@ -1,7 +1,7 @@
 {
-  "name": "yuqing-monitor-electron",
+  "name": "yuqing-monitor",
   "version": "0.0.1",
-  "author": "poetries <jingguanliuye@gmail.com>",
+  "author": "poetries <me@poetries.top>",
   "description": "一个使用electron开发的舆情监控客户端",
   "license": null,
   "main": "./dist/electron/main.js",
@@ -17,8 +17,8 @@
     "postinstall": ""
   },
   "build": {
-    "productName": "yuqing-monitor-electron",
-    "appId": "yuqing.monitor",
+    "productName": "舆情监控系统",
+    "appId": "com.yuqing-monitor",
     "directories": {
       "output": "build"
     },
